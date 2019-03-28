@@ -15,3 +15,8 @@ its output directed to a file, for example:
 `parse-results.py` is run on that text output and prints statistical properties
 of the results (mean, median, confidence interval, etc.).
 
+`wake-and-post.py` is an alternative to `serialscript.py` meant to be used with
+a modem in PSM deep sleep. Once the `PWR_ON` button is manually pressed, the
+script detects the wakeup of the radio and performs an HTTP POST as soon as the
+network has re-attached.
+
